@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Britto Som</title>
+    <link rel="icon" type="image/png" href="/assents/logo.png"> 
+    <link rel="stylesheet" href="/style/style.css">
+
+</head>
+
+<body>
+    <button class="botao-paleta" onclick="location.reload()">Trocar Cores</button>
+    
+    <hearder class="cabecalho">
+        <nav class="cabecalho__geral">
+            <a class="cabecalho__geral__links" href="teste 1.html">Home</a>
+            <a class="cabecalho__geral__links" href="menu.html">Menu</a>
+        </nav>
+    </hearder>
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            
+            <h1 class="apresentacao__conteudo__titulo">Eleve seu evento a outro nível <strong
+            class="titulo-destaque">com um som e iluminção de qualidade!</strong></h1>
+            <p class="apresentacao__conteudo__pa">Olá! Sou Britto, trabalho com sonorização e iluminação cênica em eventos de diversos portes. Atendo em casamentos, aniversários, chás de bebê, bares, confraternizações empresariais, entre muitos outros.
+
+            <p class="apresentacao__conteudo__pa">Ofereço equipamentos profissionais e modernos, garantindo qualidade sonora e visual para que cada evento seja único, marcante e bem executado.
+            </p>
+
+            <p class="apresentacao__conteudo__pa"> 
+                Atendimento Exclusivo para Salvador/BA, Lauro de Freitas e Linha Verde, oferecendo um serviço ágil e personalizado.
+            </p>
+            
+            <p class="apresentacao__conteudo__pa">Vamos conversar? Estou à disposição para montar um orçamento
+                personalizado para o seu evento!</p>
+
+            <h2 class="apresentacao__links__subtitulo"> Acesse as redes sociais:</h2>
+
+            <div class="apresentacao__links">
+
+                <a class="apresentacao__links__redes" href="https://instagram.com/britto.som">
+                    <img src="/assents/instagram_33x32.png">Instagram</a>
+
+                <a class="apresentacao__links__redes" href="https://wa.me/5571996395047">
+                    <img src="/assents/whats (1).png"> Whatsapp</a>
+
+            </div>
+        </section>
+        <img class="apresentacao__imagem" src="/assents/caixas 1.png" alt="caixas de som da oneal">
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por RyanBarrosB</p>
+    </footer>
+
+<script>
+    const paletas = [
+        {
+            "--cor-primaria": "#FCEFCB;",
+            "--cor-secundaria": "#A86523;",
+            "--cor-terciaria": "#E9A319;",
+            "--cor-terciaria--hover": "#FAD59A;"
+        },
+        {
+            "--cor-primaria": "#F0F8FF",
+            "--cor-secundaria": "#2E8B57",
+            "--cor-terciaria": "#333",
+            "--cor-terciaria--hover": "#90EE90"
+        },
+        {
+            "--cor-primaria": "#2A4759",
+            "--cor-secundaria": "#DDDDDD",
+            "--cor-terciaria": "#F79B72",
+            "--cor-terciaria--hover": "#EEEEEE"
+        },
+        {
+            "--cor-primaria": "#222831",
+            "--cor-secundaria": "#00ADB5",
+            "--cor-terciaria": "#EEEEEE",
+            "--cor-terciaria--hover": "#393E46"
+        },
+        {
+            "--cor-primaria": "#8EA3A6",
+            "--cor-secundaria": "#22177A",
+            "--cor-terciaria": "#605EA1",
+            "--cor-terciaria--hover": "#E6E9AF"
+        }
+    ];
+
+    const paletaAleatoria = paletas[Math.floor(Math.random() * paletas.length)];
+
+    for (const variavel in paletaAleatoria) {
+        document.documentElement.style.setProperty(variavel, paletaAleatoria[variavel]);
+    }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="/style/style.css">
+
+</head>
+
+<body>
+    <button class="botao-paleta" onclick="location.reload()">Trocar Cores</button>
+    <hearder class="cabecalho">
+        <nav class="cabecalho__geral">
+            <a class="cabecalho__geral__links" href="teste 1.html">Home</a>
+            <a class="cabecalho__geral__links" href="menu.html">Menu</a>
+        </nav>
+    </hearder>
+
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo">Informações Gerais</h1>
+            
+            <div class="apresentacao__conteudo__pc">
+    <h2>Materiais:</h2> 
+    
+    <h2>Iluminação</h2>
+    <ul>
+        <li><strong>Mesa Dmx 512</strong></li>
+        <li><strong>Máquina de fumaça </strong> – 1500w </li>
+        <li><strong>8x Par Led </strong> – RGBWA – 18w</li>
+        <li><strong>2x Moving Beam Spider </strong> – RGBW – 12w</li>
+        <li><strong>2x Moving Beam 251 8r </strong> – RGBW – 8000k– 250w</li>
+    </ul>
+    
+    <h2>Mesa de som</h2>
+    <ul>
+        <li><strong>Soundcraft UIR24</strong> – Digital de 24 canais</li>
+        <li><strong>Yamaha MG16XU</strong> – Analógica de 16 Canais </li>
+        <li><strong>Staner Mx1606fxr</strong> – Analógica de 16 Canais</li>
+    </ul>
+
+    <h2>Caixas P.A. Frontal</h2>
+    <ul>
+        <li><strong>2x Oneal OPB-3800</strong> – Ativo – Potência RMS: 350W</li>
+        <li><strong>2x Oneal OPB-2800L</strong> – Ativo – Potência RMS: 700W</li>
+        <li><strong>2x K-Audio TW15-A</strong> – Ativo – Potência RMS: 500W</li>
+    </ul>
+
+     <h2>Retorno</h2>
+    <ul>
+        <li><strong>1x JBL EON-615</strong> – Ativo – Potência RMS: 500W</li>
+        <li><strong>1x DBR 715</strong> – Ativo – Potência RMS: 700W</li>
+    </ul>
+
+    <h2>Subwoofers</h2>
+    <ul>
+        <li><strong>2x Oneal OLS-1118</strong> – Ativo – Alto-Falante: 1 x 18 – Potência RMS: 600W</li>
+        <li><strong>1x Oneal OLS-215</strong> – Ativo – Alto-Falante: 2 x 15 – Potência RMS: 1200W</li>
+        <li><strong>2x HHAUDIO TRS-1800</strong> – Ativo – Alto-Falante: 1 x 18 – Potência RMS: 350W</li>
+    </ul>
+            </div>
+            <p class="apresentacao__conteudo__pb"><strong>Orçamento:</strong> Acesse as redes sociais e vamos montar um orçamento
+                personalizado para o seu evento!</p>
+
+            <div class="apresentacao__links">
+
+                <a class="apresentacao__links__redes" href="https://instagram.com/britto.som">
+                    <img src="/assents/instagram_33x32.png">Instagram</a>
+
+                <a class="apresentacao__links__redes" href="https://wa.me/5571996395047">
+                    <img src="/assents/whats (1).png"> Whatsapp</a>
+
+            </div>
+        </section>
+        <img class="apresentacao__imagem" src="/assents/caixas 1.png" alt="caixas de som da oneal">
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por RyanBarrosB</p>
+    </footer>
+
+    <script>
+    const paletas = [
+        {
+            "--cor-primaria": "#FCEFCB;",
+            "--cor-secundaria": "#A86523;",
+            "--cor-terciaria": "#E9A319;",
+            "--cor-terciaria--hover": "#FAD59A;"
+        },
+        {
+            "--cor-primaria": "#F0F8FF",
+            "--cor-secundaria": "#2E8B57",
+            "--cor-terciaria": "#333",
+            "--cor-terciaria--hover": "#90EE90"
+        },
+        {
+            "--cor-primaria": "#2A4759",
+            "--cor-secundaria": "#DDDDDD",
+            "--cor-terciaria": "#F79B72",
+            "--cor-terciaria--hover": "#EEEEEE"
+        },
+        {
+            "--cor-primaria": "#222831",
+            "--cor-secundaria": "#00ADB5",
+            "--cor-terciaria": "#EEEEEE",
+            "--cor-terciaria--hover": "#393E46"
+        },
+        {
+            "--cor-primaria": "#8EA3A6",
+            "--cor-secundaria": "#22177A",
+            "--cor-terciaria": "#605EA1",
+            "--cor-terciaria--hover": "#E6E9AF"
+        }
+    ];
+
+    const paletaAleatoria = paletas[Math.floor(Math.random() * paletas.length)];
+
+    for (const variavel in paletaAleatoria) {
+        document.documentElement.style.setProperty(variavel, paletaAleatoria[variavel]);
+    }
+</script>
+
+</body>
+
+</html>
